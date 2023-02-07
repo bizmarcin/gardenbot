@@ -5,7 +5,9 @@ import openai_class
 
 #main
 if __name__ == '__main__':
-    print(openai_class.oai.question("What about carrot?"))
+    question = "What about carrot?"
+    response = openai_class.oai.question(question)
+    print(response)
 
 
 
