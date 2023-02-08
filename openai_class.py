@@ -1,6 +1,7 @@
 import openai
 import env_variables
 class oai:
+
     def question(gpt_prompt):
         openai.api_key = env_variables.variables.OPEN_AI_KEY
 
