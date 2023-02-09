@@ -1,9 +1,10 @@
 import openai
-import env_variables
+import config
+
 class oai:
 
     def question(gpt_prompt):
-        openai.api_key = env_variables.variabbles.OPEN_AI_KEY
+        openai.api_key = config.settings['open_ai_key']
 
         response = openai.Completion.create(
             engine="text-davinci-002",
