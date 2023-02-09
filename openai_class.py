@@ -3,7 +3,7 @@ import env_variables
 class oai:
 
     def question(gpt_prompt):
-        openai.api_key = env_variables.variables.OPEN_AI_KEY
+        openai.api_key = env_variables.variabbles.OPEN_AI_KEY
 
         response = openai.Completion.create(
             engine="text-davinci-002",
